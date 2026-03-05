@@ -3,64 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoub Deals | أفضل العروض والمنتجات</title>
+    <title>Ayoub Earn | منصة الأرباح</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; color: #1c1e21; }
-        header { background: linear-gradient(135s, #1a73e8, #0d47a1); color: white; padding: 60px 20px; text-align: center; }
-        .container { padding: 30px 15px; max-width: 1000px; margin: auto; }
-        .section-title { font-size: 1.8em; margin-bottom: 25px; border-right: 5px solid #1a73e8; padding-right: 15px; text-align: right; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .product-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s; text-align: center; display: flex; flex-direction: column; }
-        .product-card:hover { transform: translateY(-8px); }
-        .product-image { background: #eee; height: 180px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999; }
-        .product-info { padding: 20px; flex-grow: 1; }
-        .price { color: #e41e3f; font-size: 1.4em; font-weight: bold; margin: 10px 0; }
-        .buy-btn { display: block; background: #ff9900; color: #000; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.2s; }
-        .buy-btn:hover { background: #e68a00; }
+        :root { --primary: #00d2ff; --secondary: #3a7bd5; --dark: #121212; --card: #1e1e1e; --text: #ffffff; }
+        body { background-color: var(--dark); color: var(--text); font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; }
+        .navbar { background: linear-gradient(90deg, var(--secondary), var(--primary)); padding: 15px 20px; text-align: center; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .hero { padding: 40px 20px; text-align: center; background: radial-gradient(circle, #2c3e50 0%, #000000 100%); }
+        .container { padding: 20px; max-width: 1100px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card); border-radius: 15px; padding: 20px; border: 1px solid #333; transition: 0.3s ease; text-align: center; }
+        .card:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 210, 255, 0.2); }
+        .icon { font-size: 40px; margin-bottom: 10px; display: block; }
+        .price-tag { color: var(--primary); font-size: 1.5em; font-weight: bold; margin: 15px 0; }
+        .btn { display: inline-block; background: var(--primary); color: #000; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; width: 80%; }
+        .btn:hover { background: #fff; box-shadow: 0 0 20px var(--primary); }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>عروض أيوب المختارة</h1>
-    <p>أفضل المنتجات التقنية بأقل الأسعار - روابط موثوقة 100%</p>
-</header>
+    <div class="navbar">AYOUB EARN - منصة الأرباح الذكية</div>
 
-<div class="container">
-    <h2 class="section-title">منتجات ننصح بها (للربح)</h2>
-    
-    <div class="grid">
-        <div class="product-card">
-            <div class="product-image">صورة المنتج هنا</div>
-            <div class="product-info">
-                <h3>سماعات بلوتوث احترافية</h3>
-                <p>جودة صوت نقية مع خاصية عزل الضجيج وبطارية تدوم طويلاً.</p>
-                <div class="price">29.99 $</div>
-                <a href="رابط-المنتج-الخاص-بك-هنا" class="buy-btn">تفقد العرض على أمازون</a>
-            </div>
+    <div class="hero">
+        <h1>ابدأ بجني المال اليوم</h1>
+        <p>شاهد الإعلانات، أكمل المهام، واسحب أرباحك فوراً</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <span class="icon">📺</span>
+            <h3>مشاهدة الإعلانات</h3>
+            <p>اربح حتى 0.05$ مقابل كل فيديو تشاهده للنهاية.</p>
+            <div class="price-tag">متاح الآن</div>
+            <a href="#" class="btn">ابدأ المشاهدة</a>
         </div>
 
-        <div class="product-card">
-            <div class="product-image">صورة المنتج هنا</div>
-            <div class="product-info">
-                <h3>ساعة ذكية S8 Ultra</h3>
-                <p>تدعم اللغة العربية وقياس نبضات القلب مع شاشة عالية الدقة.</p>
-                <div class="price">45.00 $</div>
-                <a href="رابط-المنتج-الخاص-بك-هنا" class="buy-btn">شراء الآن من علي إكسبريس</a>
-            </div>
+        <div class="card">
+            <span class="icon">📝</span>
+            <h3>تنفيذ مهام سريعة</h3>
+            <p>أجب على استبيانات بسيطة أو حمل تطبيقات لزيادة رصيدك.</p>
+            <div class="price-tag">اربح حتى 5$</div>
+            <a href="#" class="btn">عرض المهام</a>
         </div>
 
-        <div class="product-card">
-            <div class="product-image">صورة المنتج هنا</div>
-            <div class="product-info">
-                <h3>لوحة مفاتيح ميكانيكية</h3>
-                <p>مثالية للألعاب والبرمجة مع إضاءة RGB قابلة للتخصيص.</p>
-                <div class="price">55.50 $</div>
-                <a href="رابط-المنتج-الخاص-بك-هنا" class="buy-btn">احصل عليها الآن</a>
-            </div>
+        <div class="card">
+            <span class="icon">🤝</span>
+            <h3>نظام الإحالة</h3>
+            <p>احصل على عمولة 10% عن كل صديق يسجل من خلال رابطك.</p>
+            <div class="price-tag">ربح مستمر</div>
+            <a href="#" class="btn">نسخ رابط الإحالة</a>
         </div>
     </div>
-</div>
+
+    <footer>جميع الحقوق محفوظة © 2026 - Ayoub Digital</footer>
 
 </body>
 </html>
