@@ -69,6 +69,21 @@
             <div class="price-tag">ربح مستمر</div>
             <a href="#" class="btn">نسخ رابط الإحالة</a>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+
+<script>  function signInWithGoogle() {
+    // هذه الرسالة تظهر للتأكد أن الزر استجاب
+    alert("جاري الاتصال بحساب جوجل..."); 
+    
+    // هنا يتم فتح نافذة جوجل (تحتاج ربط Firebase لتكتمل)
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then((result) => {
+        window.location.href = "watch.html"; 
+    });
+  }
+</script>
+
     </div>
 
     <footer>جميع الحقوق محفوظة © 2026 - Ayoub Digital</footer>
