@@ -71,6 +71,19 @@
         </div>
         <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+// ضع هذا الجزء قبل وظيفة signInWithGoogle
+const firebaseConfig = {
+  apiKey: "AIzaSy...", // الكود الخاص بك من Firebase
+  authDomain: "ayoub-e5616.firebaseapp.com",
+  projectId: "ayoub-e5616",
+  storageBucket: "ayoub-e5616.appspot.com",
+  messagingSenderId: "558037120016",
+  appId: "..."
+};
+
+// تشغيل Firebase
+firebase.initializeApp(firebaseConfig);
+      
 
 <script>  function signInWithGoogle() {
     // هذه الرسالة تظهر للتأكد أن الزر استجاب
