@@ -3,39 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoub Services | خدمات أيوب للبرمجيات</title>
+    <title>Ayoub Deals | أفضل العروض والمنتجات</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; color: #333; text-align: center; }
-        header { background: #2c3e50; color: white; padding: 40px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .container { padding: 50px 20px; max-width: 800px; margin: auto; }
-        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 20px; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        h1 { margin: 0; font-size: 2.5em; }
-        p { line-height: 1.6; color: #666; }
-        .btn { display: inline-block; background: #27ae60; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; margin-top: 15px; }
-        .price { color: #27ae60; font-size: 1.5em; font-weight: bold; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; color: #1c1e21; }
+        header { background: linear-gradient(135s, #1a73e8, #0d47a1); color: white; padding: 60px 20px; text-align: center; }
+        .container { padding: 30px 15px; max-width: 1000px; margin: auto; }
+        .section-title { font-size: 1.8em; margin-bottom: 25px; border-right: 5px solid #1a73e8; padding-right: 15px; text-align: right; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .product-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s; text-align: center; display: flex; flex-direction: column; }
+        .product-card:hover { transform: translateY(-8px); }
+        .product-image { background: #eee; height: 180px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999; }
+        .product-info { padding: 20px; flex-grow: 1; }
+        .price { color: #e41e3f; font-size: 1.4em; font-weight: bold; margin: 10px 0; }
+        .buy-btn { display: block; background: #ff9900; color: #000; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.2s; }
+        .buy-btn:hover { background: #e68a00; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ayoub Digital Services</h1>
-        <p>حلول برمجية ذكية لعملك الخاص</p>
-    </header>
 
-    <div class="container">
-        <div class="card">
-            <h2>إنشاء مواقع احترافية</h2>
-            <p>نقوم بتصميم وبرمجة مواقع متكاملة لشركتك أو متجرك الخاص بأحدث التقنيات.</p>
-            <div class="price">تبدأ من 50$</div>
-            <a href="https://wa.me/your-number" class="btn">اطلب خدمتك الآن</a>
+<header>
+    <h1>عروض أيوب المختارة</h1>
+    <p>أفضل المنتجات التقنية بأقل الأسعار - روابط موثوقة 100%</p>
+</header>
+
+<div class="container">
+    <h2 class="section-title">منتجات ننصح بها (للربح)</h2>
+    
+    <div class="grid">
+        <div class="product-card">
+            <div class="product-image">صورة المنتج هنا</div>
+            <div class="product-info">
+                <h3>سماعات بلوتوث احترافية</h3>
+                <p>جودة صوت نقية مع خاصية عزل الضجيج وبطارية تدوم طويلاً.</p>
+                <div class="price">29.99 $</div>
+                <a href="رابط-المنتج-الخاص-بك-هنا" class="buy-btn">تفقد العرض على أمازون</a>
+            </div>
         </div>
 
-        <div class="card">
-            <h2>تحسين محركات البحث SEO</h2>
-            <p>اجعل موقعك يظهر في النتائج الأولى على جوجل لزيادة أرباحك ومبيعاتك.</p>
-            <a href="#" class="btn">التفاصيل</a>
+        <div class="product-card">
+            <div class="product-image">صورة المنتج هنا</div>
+            <div class="product-info">
+                <h3>ساعة ذكية S8 Ultra</h3>
+                <p>تدعم اللغة العربية وقياس نبضات القلب مع شاشة عالية الدقة.</p>
+                <div class="price">45.00 $</div>
+                <a href="رابط-المنتج-الخاص-بك-هنا" class="buy-btn">شراء الآن من علي إكسبريس</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">صورة المنتج هنا</div>
+            <div class="product-info">
+                <h3>لوحة مفاتيح ميكانيكية</h3>
+                <p>مثالية للألعاب والبرمجة مع إضاءة RGB قابلة للتخصيص.</p>
+                <div class="price">55.50 $</div>
+                <a href="رابط-المنتج-الخاص-بك-هنا" class="buy-btn">احصل عليها الآن</a>
+            </div>
         </div>
     </div>
+</div>
+
 </body>
 </html>
-
